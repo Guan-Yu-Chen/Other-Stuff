@@ -39,7 +39,7 @@ int main() {
     }
     for(int i = 0 ; i < 99 ; i++)
     {
-        spend_times += Jackpot[i] * (i+1);          //  計算中獎100萬次花了幾抽, 
+        spend_times += Jackpot[i] * (i+1);          //  計算中獎100萬次花了幾抽, 在第i抽中獎的次數 * i抽
     }
 
     cout << "期望值 = " << spend_times / test_round << " 抽" << endl;
