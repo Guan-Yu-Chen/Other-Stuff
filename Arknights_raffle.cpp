@@ -13,7 +13,7 @@ int main() {
     vector<int> Jackpot(99);                //  記錄在第幾抽出貨的次數, 1-99抽
     double test_round = 1000000.0;          //  100萬次
     double Prob;                            //  抽獎機率
-    long spend_times = 0;                   //  紀錄中獎10萬次花了幾抽
+    long spend_times = 0;                   //  紀錄中獎100萬次花了幾抽
 
     for(int i = 0 ; i < test_round ; i++)
     {
@@ -39,7 +39,7 @@ int main() {
     }
     for(int i = 0 ; i < 99 ; i++)
     {
-        spend_times += Jackpot[i] * (i+1);          //  計算中獎10萬次花了幾抽, 
+        spend_times += Jackpot[i] * (i+1);          //  計算中獎100萬次花了幾抽, 
     }
 
     cout << "期望值 = " << spend_times / test_round << " 抽" << endl;
